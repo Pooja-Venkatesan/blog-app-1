@@ -1,0 +1,141 @@
+// src/components/BlogApp.scss
+
+$primary-color: #007bff;
+$secondary-color: #ccc;
+$font-size: 16px;
+
+body{
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+nav{
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: left;
+  background-color: black;
+  color: white;
+  padding: 1px;
+}
+nav ul{
+   display: flex;
+   justify-content: space-between;
+}
+nav h1{
+  margin: 0;
+  // display: inline-block;
+}
+
+nav ul li{
+  list-style: none;
+  color: white;
+  display: inline-flex;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid $secondary-color;
+  border-radius: 4px;
+  font-size: $font-size;
+}
+
+.textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid $secondary-color;
+  border-radius: 4px;
+  font-size: $font-size;
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin:20px auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+  border-radius: 4px; 
+}
+.button {
+  background: $primary-color;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: $font-size;
+  cursor: pointer;
+}
+.post-button,
+.draft-button {
+  background-color: #007bff;
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px; 
+  border-radius: 4px; 
+}
+
+.post-button:hover,
+.draft-button:hover {
+  background-color: #0056b3; 
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post {
+  border: 1px solid $secondary-color;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.post-title {
+  font-size: 24px; 
+  margin-bottom: 10px;
+}
+
+.post-info {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  font-size: 16px;
+}
+
+.remove-button {
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.edit-button{
+  background: black;
+  margin:0 10px;
+}
